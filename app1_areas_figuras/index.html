@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LIBRERIA CLOUDFIRE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <!--LIBRERI SWEET ALERT 2 Y MATERIALIZE-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="../css/style_areas.css">
+    <title>Calculadora de Areas para figuras Geometricas</title>
+</head>
+
+<body>
+    <!--NOTONES DE HOME Y SIGUIENTE SOLUCION-->
+    <a href="../index.html"><button id="btn_home" type="button">
+            <i class="material-icons right">home</i>Inicio</button></a>
+    <a href="../app2_edades_vector/index.html"><button id="btn_home" type="button">
+            <i class="material-icons right">skip_next</i>Siguiente</button></a>
+
+    <div class="contenedor">
+        <h1>Calculadora de Áreas</h1>
+        <label for="figura"></label>
+        <select class="browser-default" id="figura" onchange="mostrarCampos()" class="input-field col s12">
+            <option disabled selected>Selecciona una figura</option>
+            <option value="triangulo">Triángulo</option>
+            <option value="rectangulo">Rectángulo</option>
+            <option value="cuadrado">Cuadrado</option>
+            <option value="circulo">Círculo</option>
+        </select>
+
+        <div id="trianguloCampos" style="display:none;">
+            <label for="h">medida de la Base:</label>
+            <input type="number" id="a"><br>
+            <label for="b">Medida de Altura:</label>
+            <input type="number" id="b">
+        </div>
+
+        <div id="rectanguloCampos" style="display:none;">
+            <label for="base">Medida Base:</label>
+            <input type="number" id="base"><br>
+            <label for="altura">Medida Altura:</label>
+            <input type="number" id="altura">
+        </div>
+
+        <div id="cuadradoCampos" style="display:none;">
+            <label for="lado">Lado:</label>
+            <input type="number" id="lado">
+        </div>
+
+        <div id="circuloCampos" style="display:none;">
+            <label for="radio">Radio:</label>
+            <input type="number" id="radio">
+        </div>
+
+        <button onclick="calcularArea()">Calcular Área
+            <i class="material-icons right">exposure</i></button>
+
+        <p id="resultado"></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+    <script src="../js/areas.js"></script>
+
+</body>
+
+</html>

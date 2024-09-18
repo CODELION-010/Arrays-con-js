@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LIBRERIA CLOUDFIRE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <!--LIBRERI SWEET ALERT 2 Y MATERIALIZE-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="../css/style_edades.css">
+    <title>Estadísticas de Edades</title>
+</head>
+
+<body>
+        <!--NOTONES DE HOME Y SIGUIENTE SOLUCION-->
+        <a href="../index.html"><button id="btn_home" type="button">
+            <i class="material-icons right">home</i>Inicio</button></a>
+    <a href="../app3_ordenamiento_vectores/index.html"><button id="btn_home" type="button">
+            <i class="material-icons right">skip_next</i>Siguiente</button></a>
+
+    <div  class="contenedor">
+        <h1>Estadísticas de 10 Edades</h1>
+        <label class="input-field">Ingresa 10 edades porfavor (una por una)</label>
+        <input type="number" id="edad_input"><br>
+        <button onclick="agregarEdad()">Agregar Edad</button>
+        <button onclick="procesarEdades()">Generar Estadísticas</button>
+    </div>
+    <script src="../js/edades.js"></script>
+    
+</body>
+
+</html>

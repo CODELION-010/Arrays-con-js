@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--LIBRERIA CLOUDFIRE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <!--LIBRERI SWEET ALERT 2 Y MATERIALIZE-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- Incluye la librería SweetAlert para mostrar alertas estilizadas -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="../css/style_orden_vectores.css">
+    <title>Mezcla de Vectores</title>
+</head>
+
+<body>
+            <!--NOTONES DE HOME Y SIGUIENTE SOLUCION-->
+            <a href="../index.html"><button id="btn_home" type="button">
+                <i class="material-icons right">home</i>Inicio</button></a>
+        <a href="../app4_registros_emisora/index.html"><button id="btn_home" type="button">
+                <i class="material-icons right">skip_next</i>Siguiente</button></a>
+    
+    
+    <div class="contenedor">
+        <h1>Ingresar Vectores</h1>
+
+        <h2>Vector 1</h2>
+        <input type="number" id="vector1_input" placeholder="Ingrese número">
+        <button onclick="agregarNumero(1)">Agregar Número al Vector 1</button>
+        <p id="vector1_display"></p>
+
+        <h2>Vector 2</h2>
+        <input type="number" id="vector2_input" placeholder="Ingrese número">
+        <button onclick="agregarNumero(2)">Agregar Número al Vector 2</button>
+        <p id="vector2_display"></p>
+
+        <button onclick="fusionar_array()">Mezclar y Ordenar Vectores</button>
+
+        <h2>Resultado</h2>
+        <p id="resultado"></p>
+    </div>
+    <script src="../js/ordenar_vectores.js"></script>
+</body>
+
+</html>

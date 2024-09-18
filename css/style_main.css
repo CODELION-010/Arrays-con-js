@@ -1,0 +1,40 @@
+body{
+    background-image:url(../img/fondo_home\ \(2\).jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.section{
+    height: 150%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+#card{
+    margin: 1%;
+    height: 100%;
+}
+#card:hover{
+    box-shadow: 0px 0px 25px 0px rgba(243, 240, 240, 0.975);
+
+}
+H1,h5,h6{
+    color: aliceblue;
+    font-size: 10px;
+text-shadow: 1px rgb(14, 1, 1);
+}
+.fondo_gradiente{
+    background-color: rgba(12, 4, 54, 0.743);
+    height: 800%;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media (min-width: 412px) and (max-width: 915px) {
+    .section {
+  padding: auto;
+
+      display: block;
+      justify-content: center;
+    }
+  }

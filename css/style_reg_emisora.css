@@ -1,0 +1,46 @@
+ body {
+   background-image: url(../img/fondo_emisora.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+ }
+ .contenedor0{
+  display: flex;
+  justify-content: center;
+  
+ }
+ .container1,
+ .container2 {
+   text-align: center;
+   background-color: rgba(12, 4, 54, 0.743);
+   box-shadow: 0px 0px 15px 0px rgba(243, 240, 240, 0.975);
+   width: 50%;
+   height: 180%;
+   border-radius: 4%;
+ }
+
+ .inputs {
+   margin: 10%;
+ }
+/* --------------------------------------------------------------------
+* - ESTILOS POPUP SWET ALERT PERZONALIZADO
+* -------------------------------------------------------------------- */
+ .mi-popup-clase {
+   background-color: rgba(96, 87, 135, 0.743);
+   !important;
+   color: white;
+   !important;
+   ;
+   box-shadow: 0px 0px 15px 0px rgba(243, 240, 240, 0.975) !important;
+ }
+
+ button {
+   background-color: rgba(96, 87, 135, 0.743);
+   padding: 3%;
+   border-radius: 15px;
+ }
+ #btn_home{
+  text-align: left;
+  padding: 1%;
+  border-radius: 10%;
+ }
